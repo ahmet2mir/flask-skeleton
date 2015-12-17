@@ -27,6 +27,15 @@ With `docker`:
 
     docker run -p 5000:5000 flask-skeleton
 
+With `heroku`:
+
+    heroku create
+    git push heroku master
+    heroku ps:scale web=1
+    heroku open
+    heroku logs --tail
+
+
 ## Test
 
 Visit:

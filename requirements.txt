@@ -3,3 +3,4 @@ Flask
 pyScss
 cssmin
 Flask-HTTPAuth
+gunicorn
