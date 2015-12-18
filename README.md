@@ -8,6 +8,18 @@ This is a simple flask skeleton to quickly start a new web project using:
 - HTTP basic auth
 - web and api views with Blueprint
 
+If you're not confortable with Flask follow:
+
+- [Getting stared](http://flask.pocoo.org/docs/0.10/quickstart/)
+- [Model-View-Controller (MVC) Explained -- With Legos](https://realpython.com/blog/python/the-model-view-controller-mvc-paradigm-summarized-with-legos/)
+- [Modular Applications with Blueprints](http://flask.pocoo.org/docs/0.10/blueprints/)
+- [How to structure large flask applications](https://www.digitalocean.com/community/tutorials/how-to-structure-large-flask-applications)
+- [How To Serve Flask Applications with Gunicorn and Nginx on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-14-04)
+
+If you're not confortable with SASS/SCSS follow:
+
+- [Getting Started with SASS (with interactive examples)](https://scotch.io/tutorials/getting-started-with-sass)
+
 ## Installation
 
 Run:
@@ -69,3 +81,4 @@ With bad auth:
 - Create new scss files under static/scss/ and make the import in `__main__.scss`, the `main.css` is generated in /static/css/main.css
 - Log file is in root repo named skeleton.log
 - HTTP auth is done by `auth.py`
+
