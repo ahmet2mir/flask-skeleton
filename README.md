@@ -163,6 +163,6 @@ With bad auth:
 ## Details
 
 - Create new scss files under static/scss/ and make the import in `__main__.scss`, the `main.css` is generated in /static/css/main.css
-- Log file is in root repo named skeleton.log
+- Log file is in root repo named myproject.log
 - HTTP auth is done by `auth.py`
 
