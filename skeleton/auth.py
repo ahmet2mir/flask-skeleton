@@ -4,7 +4,7 @@ from __future__ import absolute_import
 import logging
 
 from flask import make_response, jsonify
-from flask.ext.httpauth import HTTPBasicAuth
+from flask_httpauth import HTTPBasicAuth
 
 auth = HTTPBasicAuth()
 logger = logging.getLogger(__name__)

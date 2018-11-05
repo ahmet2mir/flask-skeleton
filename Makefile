@@ -23,6 +23,11 @@ usage:
 	@echo "        ctrl+c: stop process."
 	@echo "        next make local: start main.py."
 	@echo ""
+	@echo "    pipenv: create pipenv project, install requirements and run."
+	@echo "        auto-reload: yes."
+	@echo "        ctrl+c: stop process."
+	@echo "        next make pipenv: start main.py."
+	@echo ""
 	@echo "    docker: build image and run."
 	@echo "        auto-reload: yes."
 	@echo "        ctrl+c: remove container."
@@ -54,6 +59,14 @@ local: .deployed
 		.venv/bin/pip install -r requirements.txt ; \
 	fi;
 	.venv/bin/python main.py
+
+pipenv: .deployed
+	@if ! pipenv --venv 2> /dev/null ; \
+	then \
+		pipenv --python 2.7 ; \
+		pipenv install ; \
+	fi;
+	pipenv run python main.py
 
 docker: .deployed
 	@if [ -z `docker images -q ${project}` ] ; \
