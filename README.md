@@ -199,3 +199,6 @@ curl -XGET -u admin:badpass http://127.0.0.1:5000/api/v1.0/health
 - Log file is in root repo named myproject.log
 - HTTP auth is done by `auth.py`
 
+## Previous version
+
+Checkout tag `37ee6a7a7ba2ab82b416d100fc85ccbfa811f100` to use previous skeleton version
